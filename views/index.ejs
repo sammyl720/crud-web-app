@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <% include ./includes/nav %>
+    <main class="container">
+        <div class="form-wrapper">
+            <form action="/tweet" method="POST" class="form">
+            <label class="form-label form-control" for="tweet">What on Your mind?</label>
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control textbox" name="tweet" id="tweet" required>
+                </div>
+                <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
