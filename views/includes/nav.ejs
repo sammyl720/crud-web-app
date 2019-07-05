@@ -2,7 +2,12 @@
     <ul class="nav-list">
         <li class="nav-list__item"><a href="/tweets">Journal</a></li>
         <li class="nav-list__item"><a href="/">New Entry</a></li>
-
+        <% if(!isLoggedIn){ %> 
+            <li class="nav-list__item"><a href="/login">Login</a></li>
+            <li class="nav-list__item"><a href="/signup">Signup</a></li>
+        <% }else{ %> 
+        <li class="nav-list__item"><a href="/logout">Logout</a></li>
+        <% } %>
     </ul>
 
 </nav>
